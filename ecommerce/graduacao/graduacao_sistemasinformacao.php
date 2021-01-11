@@ -30,7 +30,7 @@
 </div>
 -->
 <span class="endereco" data-endereco="<?php echo URL; ?>"> <?php echo URL;?> </span>
-<script>
+<!--<script>
 function pagamento(){
 
 var endereco = jQuery('.endereco').attr("data-endereco");
@@ -44,7 +44,7 @@ $.ajax({
     }
 });
 }       
-</script>
+</script>!-->
 
 <div class="w3-container w3-padding-32" style="padding-left:100px; background-color:#008578; color:white;">
   <h1>Mais sobre o curso de Sistemas da Informação</h1>
@@ -182,7 +182,7 @@ function openTab(evt, nomeCurso) {
 
 </div>
 
-<button onclick="pagamento();" class="w3-button w3-block w3-section w3-light-grey w3-ripple w3-padding w3-border">Confirmar Compra</button>
-<button onclick="pagamento();"> PAGAR</button>
+<!--<button onclick="pagamento();" class="w3-button w3-block w3-section w3-light-grey w3-ripple w3-padding w3-border">Confirmar Compra</button>
+<button onclick="pagamento();"> PAGAR</button>!-->
 </body>
 </html> 
