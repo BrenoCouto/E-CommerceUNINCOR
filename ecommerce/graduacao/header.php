@@ -1,10 +1,5 @@
 <?php 
-  include'server.php';
-
-  
-
-  include'pagamento.php';
-   
+  include'server.php';   
 ?>
 <!DOCTYPE html>
 <html>

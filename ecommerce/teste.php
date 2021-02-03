@@ -1,5 +1,5 @@
 <?php
-include 'config/pagamento.php';
+include 'config/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,22 +15,12 @@ include 'config/pagamento.php';
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="<?php echo SCRIPT_PAGSEGURO; ?>"></script>
-        <script src="js/core.js"></script>
+        <script src="js/config.js"></script>
+
+        <div class="CartaoCredito"></div>
+        <div class="Boleto"></div>
+        <div class="Debito"></div>
+        
+
     </body>
-
-
-    <script>
-    function pagamento(){
-        var endereco = jQuery('.endereco').attr("data-endereco");
-
-        $.ajax({
-            url: endereco + "/pagamento.php",
-            type: 'POST',
-            dataType: 'json',
-            success: function ($retorno){
-                console.log("FUNCIONOU ATÉ AQUI");
-            }
-        });
-        } 
-</script>
 </html>

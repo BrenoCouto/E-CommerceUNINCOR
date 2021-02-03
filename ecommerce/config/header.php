@@ -1,10 +1,5 @@
 <?php 
   include'server.php';
-
-  
-
-  include'pagamento.php';
-   
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="inc/js/core.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -36,7 +30,7 @@
   <a href="cursos_posgraduacao.php" class="w3-bar-item w3-button">Cursos de Pós-Graduação</a>
   <a href="cursos_extensao.php" class="w3-bar-item w3-button">Cursos de Extensão</a>
   <a href="cursos_livres.php" class="w3-bar-item w3-button">Cursos Livres</a>
-  <a href="login.php?logout='1'" style="color: black; background-color: red" class="w3-bar-item w3-button">SAIR</a>
+  <a href="login.php?logout='1'" onclick="DestroySession();" style="color: black; background-color: red" class="w3-bar-item w3-button">SAIR</a>
   
 </div>
 

@@ -1,25 +1,19 @@
 <?php 
-  include'server.php';
-
-  
-
-  include'pagamento.php';
-   
+  include'server.php';   
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<title>MDFS - Cursos Online</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="inc/js/core.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script href="js/config.js"></script>
+  <script href="../js/config.js"></script>
 
   <script type="text/javascript" src= "<?php echo SCRIPT_PAGSEGURO?>" ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +23,7 @@
 
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none " id="leftMenu">
   <button onclick="fecharMenuEsquerda()" class="w3-bar-item w3-button w3-large">Fechar &times;</button>
-  <a class="w3-bar-item w3-button" href="dashboard.php">Home</a>
+  <a class="w3-bar-item w3-button" href="../dashboard.php">Home</a>
   <a href="#news" class="w3-bar-item w3-button">Meus Cursos</a>
   <a href="../perfil.php" class="w3-bar-item w3-button">Meu Perfil</a>
   <a href="../cursos_graduacao.php" class="w3-bar-item w3-button">Cursos de Graduação</a>
@@ -48,7 +42,7 @@
     <?php endif ?>
   </button>
   
-  <a href="checkout.php">
+  <a href="../checkout.php">
   <button class="w3-button w3-teal w3-xlarge w3-right">
       <p style="font-size:19px;">Carrinho<i class="fa fa-shopping-cart"></i></p>
   </button>

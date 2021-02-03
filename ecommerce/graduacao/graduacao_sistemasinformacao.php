@@ -29,7 +29,6 @@
 
 </div>
 -->
-<span class="endereco" data-endereco="<?php echo URL; ?>"> <?php echo URL;?> </span>
 <!--<script>
 function pagamento(){
 
@@ -50,7 +49,7 @@ $.ajax({
   <h1>Mais sobre o curso de Sistemas da Informação</h1>
 </div>
 
-<span class="endereco" data-endereco="<?php echo URL; ?>"> <?php echo URL;?> </span>
+
 
 <div class="w3-row-padding" style="background-color:Lavender;">
 
@@ -143,38 +142,9 @@ function openTab(evt, nomeCurso) {
 <hr style="background-color:black;">
 <div class="w3-container w3-center" style="padding-bottom:10px;" >
   <h2>Teve interesse em comprar o curso?</h2>
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal">Comprar Curso</button>
+  <button onclick="pagamento();" class="w3-button w3-teal">Comprar Curso</button>
 
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Comprando Curso...</h2>
-      </header>
-      <form method="post">
-  <div class="w3-row w3-section">  
-    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-lock"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border" name="senha_nova" type="password" placeholder="Insira sua nova senha"    >
-      </div>
-  </div>
-  <div class="w3-row w3-section">
-    <p class="w3-center">
-       Por fim, confirme a nova senha
-      </p>
-    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-lock"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border" name="confirme_senha" type="password" placeholder="Confirme sua senha">
-      </div>
-  </div>
-      <footer class="w3-container w3-teal">
-      
-      
-      </footer>
-    </div>
-    
-  </div>
+
   </form>
 </div>
 </div>
